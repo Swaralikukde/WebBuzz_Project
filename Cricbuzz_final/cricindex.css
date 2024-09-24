@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1d1f21;
+    color: #fff;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 32px;
+    animation: bounceLogo 2s infinite;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #ff6f00;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(to right, #67c16d, #3b8c3e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 48px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* News Section */
+.latest-news {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.latest-news h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.news-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.news-grid article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-grid article:hover {
+    transform: translateY(-10px);
+}
+
+.news-grid h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-grid button {
+    padding: 10px 15px;
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.news-grid button:hover {
+    background-color: #ff8c00;
+}
+
+/* Video Highlights Section */
+.video-highlights {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.video-highlights h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.highlight-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.highlight-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.highlight-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.highlight-item h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.highlight-item button {
+    padding: 10px 15px;
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.highlight-item button:hover {
+    background-color: #ff8c00;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 2px;
+    background-color: #1d1f21;
+    color: #fff;
+    text-align: center;
+}
+
+.media-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.media-button .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes bounceLogo {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
